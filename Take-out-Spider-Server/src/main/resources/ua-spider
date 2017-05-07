@@ -1,0 +1,21 @@
+# form http://help.baidu.com/question?prod_en=master&class=Baiduspider
+Mozilla/5.0 (Linux;u;Android 4.2.2;zh-cn;) AppleWebKit/534.46 (KHTML,like Gecko) Version/5.1 Mobile Safari/10600.6.3 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)
+Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)
+Baiduspider
+Baiduspider-image
+Baiduspider-video
+Baiduspider-news
+Baiduspider-favo
+Baiduspider-cpro
+Baiduspider-ads
+###############################
+Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+# form https://support.google.com/webmasters/answer/1061943
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+Googlebot/2.1 (+http://www.google.com/bot.html
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+Googlebot-News
+Googlebot-Image/1.0
+Googlebot-Video/1.0
+AdsBot-Google (+http://www.google.com/adsbot.html)
+AdsBot-Google-Mobile-Apps
