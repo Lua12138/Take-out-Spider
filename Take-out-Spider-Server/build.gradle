@@ -1,0 +1,23 @@
+group 'com.github.gam2046'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+project.ext {
+    webmagic_version = '0.6.+'
+}
+
+repositories {
+//    mavenCentral()
+//    jcenter()
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+}
+
+dependencies {
+    compile "us.codecraft:webmagic-core:$webmagic_version"
+    compile "us.codecraft:webmagic-extension:$webmagic_version"
+    testCompile 'junit:junit:4.+'
+//    testCompile group: 'junit', name: 'junit', version: '5.+'
+}
