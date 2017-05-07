@@ -7,6 +7,9 @@ sourceCompatibility = 1.8
 
 project.ext {
     webmagic_version = '0.6.+'
+    ormlite_version = '5.+'
+    sqlite_jdbc_version = '3.+'
+    junit_version = '4.+'
 }
 
 repositories {
@@ -18,6 +21,8 @@ repositories {
 dependencies {
     compile "us.codecraft:webmagic-core:$webmagic_version"
     compile "us.codecraft:webmagic-extension:$webmagic_version"
-    testCompile 'junit:junit:4.+'
-//    testCompile group: 'junit', name: 'junit', version: '5.+'
+    compile "com.j256.ormlite:ormlite-core:$ormlite_version"
+    compile "com.j256.ormlite:ormlite-jdbc:$ormlite_version"
+    compile "org.xerial:sqlite-jdbc:$sqlite_jdbc_version"
+    testCompile "junit:junit:$junit_version"
 }
