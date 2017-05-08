@@ -1,4 +1,4 @@
-package processor;
+package mudule.webmagic.processor;
 
 import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.processor.PageProcessor;

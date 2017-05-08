@@ -11,12 +11,11 @@ repositories {
 }
 
 project.ext {
-    sqlite_jdbc_version = '3.+'
     junit_version = '4.+'
 }
 
 dependencies {
-    compile "org.xerial:sqlite-jdbc:$sqlite_jdbc_version"
+    compile "mysql:mysql-connector-java:6.+"
     compile project(':Take-out-Spider-Module-Database')
     compile project(':Take-out-Spider-Module-Webmagic')
     testCompile "junit:junit:$junit_version"

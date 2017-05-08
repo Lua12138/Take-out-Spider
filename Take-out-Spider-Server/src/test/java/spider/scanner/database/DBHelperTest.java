@@ -1,4 +1,4 @@
-package database;
+package spider.scanner.database;
 
 import com.j256.ormlite.table.TableUtils;
 import org.junit.AfterClass;
@@ -6,6 +6,8 @@ import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
+import spider.server.database.DBHelper;
+import spider.server.database.Table_Shop;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -31,14 +33,14 @@ public class DBHelperTest {
         shop.setShopUrl("http:///");
 
         TableUtils.dropTable(DBHelper.getInstance().getShopDao(), true);
-        TableUtils.createTable(DBHelper.getInstance().getShopDao());
+        TableUtils.createTable(DBHelper.getInstance().getDao(Table_Shop.class));
         int n = DBHelper.getInstance().getShopDao().create(shop);
         Assert.assertEquals(1, n);
     }
 
     @Test
     public void b_update() throws SQLException {
-        Table_Shop shop = DBHelper.getInstance().getShopDao().queryForId(1);
+        Table_Shop shop = (Table_Shop) DBHelper.getInstance().getShopDao().queryForId(1);
         shop.setShopDiscount("1");
         DBHelper.getInstance().getShopDao().update(shop);
     }

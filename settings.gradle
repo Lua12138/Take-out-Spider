@@ -1,2 +1,19 @@
 rootProject.name = 'Take-out-Spider'
 
+/**
+ * 信息采集服务端
+ */
+include 'Take-out-Spider-Server'
+/**
+ * 全网采集代理服务器
+ */
+include 'Take-out-Spider-Scanner'
+/**
+ * 数据库 独立模块
+ */
+include 'Take-out-Spider-Module-Database'
+/**
+ * 爬虫 独立模块
+ */
+include 'Take-out-Spider-Module-Webmagic'
+

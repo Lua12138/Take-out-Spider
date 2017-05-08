@@ -1,14 +1,15 @@
-package database;
+package spider.server.database;
 
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
+import module.database.Table;
 
 /**
  * Created by forDream on 2017/5/7.
  * 店铺信息表
  */
 @DatabaseTable(tableName = "shop")
-public class Table_Shop {
+public class Table_Shop implements Table {
     /**
      * 店铺ID，根据爬取结果自行设置
      */
